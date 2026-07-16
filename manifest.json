@@ -1,0 +1,17 @@
+{
+  "name": "منظومة مدرسة منير المدينة الذكية",
+  "short_name": "مدرسة منير",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#1e3d59",
+  "theme_color": "#1e3d59",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://img.icons8.com/fluency/180/education.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
