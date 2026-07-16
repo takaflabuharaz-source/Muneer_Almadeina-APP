@@ -1,11 +1,10 @@
-const CACHE_NAME = 'muneer-cache-v1';
+const CACHE_NAME = 'muneer-cache-v2';
 const assets = [
   './',
   './index.html',
   './manifest.json'
 ];
 
-// تثبيت ملفات الكاش الأساسية
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
@@ -14,7 +13,6 @@ self.addEventListener('install', e => {
   );
 });
 
-// تشغيل الطلبات حتى لو كان بدون إنترنت
 self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request).then(response => {
