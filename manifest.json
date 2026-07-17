@@ -5,12 +5,12 @@
   "display": "standalone",
   "background_color": "#1e3d59",
   "theme_color": "#1e3d59",
-  "orientation": "portrait",
   "icons": [
     {
-      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JOGEUAAAAJcEhZcwAALiIAAC4iAariYmoAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAACxMAAAsTAQCanEMAAAANdEVYdFNvZnR3YXJlAEhBbmR5IFNuaXBwZXQSsJ1EAAAAJnRFWHRDcmVhdGlvbiBUaW1lAEZyaWRheSwgMTcgSnVseSAyMDI2IDEyOjI2+j93gAAAAAlwSFlzAAAuwQAALsEBuNeJS7hUAAAAbElEQVR4nO3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPg18AABAAQp+sQAAAAASUVORK5CYII=",
-      "sizes": "100x100",
-      "type": "image/png"
+      "src": "https://raw.githubusercontent.com/hassanfarran/Muneer_Almadeina-APP/main/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
