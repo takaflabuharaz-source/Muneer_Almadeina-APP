@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>منظومة مدرسة منير المدينة الذكية</title>
   
-  <!-- ملف تعريف التطبيق للتثبيت الحقيقي -->
- <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JOGEUAAAAJcEhZcwAALiIAAC4iAariYmoAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAACxMAAAsTAQCanEMAAAANdEVYdFNvZnR3YXJlAEhBbmR5IFNuaXBwZXQSsJ1EAAAAJnRFWHRDcmVhdGlvbiBUaW1lAEZyaWRheSwgMTcgSnVseSAyMDI2IDEyOjI2+j93gAAAAAlwSFlzAAAuwQAALsEBuNeJS7hUAAAAbElEQVR4nO3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPg18AABAAQp+sQAAAAASUVORK5CYII=">
+  <!-- هذا هو السطر المفقود الذي يربط الموقع بالتطبيق -->
+  <link rel="manifest" href="./manifest.json">
+  
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JOGEUAAAAJcEhZcwAALiIAAC4iAariYmoAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAACxMAAAsTAQCanEMAAAANdEVYdFNvZnR3YXJlAEhBbmR5IFNuaXBwZXQSsJ1EAAAAJnRFWHRDcmVhdGlvbiBUaW1lAEZyaWRheSwgMTcgSnVseSAyMDI2IDEyOjI2+j93gAAAAAlwSFlzAAAuwQAALsEBuNeJS7hUAAAAbElEQVR4nO3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPg18AABAAQp+sQAAAAASUVORK5CYII=">
   
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -34,13 +36,12 @@
 </head>
 <body>
 
-  <!-- شريط التثبيت الذكي -->
   <div id="install-banner">
     <div style="display: flex; align-items: center; gap: 10px;">
       <img src="https://img.icons8.com/fluency/48/education.png" style="width: 36px; height: 36px;">
       <div>
         <strong style="display:block; font-size: 14px;">تثبيت المنظومة على الجهاز</strong>
-        <span style="font-size: 11px; color: #cbd5e1;">ثبت التطبيق للوصول السريع بدون متصفح</span>
+        <span style="font-size: 11px; color: #cbd5e1;">ثبت التطبيق للوصول السريع</span>
       </div>
     </div>
     <button id="install-btn">تثبيت</button>
@@ -49,7 +50,6 @@
   <iframe src="https://script.google.com/macros/s/AKfycbz_KJ3dkYBawjfYJCOwVSzePPLCemmj7cCxatMWKpvy6sZrnzdfd-vfjl4jneI0z3fbwg/exec"></iframe>
 
   <script>
-    // تسجيل الـ Service Worker
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./sw.js')
